@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(255, 219, 178);
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+.caja {
+    width: 280px;
+    height: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    border: 2px dashed orange;
+    background-color: rgb(243, 199, 150);
+}
+
+#caja-dif {
+    background-color: rgb(170, 0, 0);
+    color: white;
+}
