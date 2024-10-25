@@ -1,5 +1,9 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-    background-color: rgb(255, 219, 178);
+    background-color: #feddbf;
 }
 
 .container1 {
@@ -10,16 +14,30 @@ body {
 }
 
 .caja {
-    width: 280px;
+    width: 250px;
     height: 180px;
     margin-right: 20px;
     margin-bottom: 20px;
     
-    border: 2px dashed orange;
-    background-color: rgb(243, 199, 150);
+    border: 2px dashed #c4a573;
+    background-color: #f3d1ae;
 }
 
 #caja-dif {
-    background-color: rgb(170, 0, 0);
+    background-color: #a92d2e;
     color: white;
+}
+
+#texto {
+    padding-left: 10px;
+    font-style: italic;
+}
+
+#texto-especial {
+    font-size: 38px;
+}
+
+#texto-especial2 {
+    font-size: 38px;
+    color: #c4a573;
 }
