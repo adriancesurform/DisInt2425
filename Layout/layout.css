@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(184, 184, 184);
+    margin: 20px;
+    text-align: center;
+}
+
+nav{
+    background-color: black;
+    margin: -5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 20px;
+    color: white;
+    margin: 0;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    height: 55vh;
+    background-color: rgb(184, 184, 184);
+    width: 20%;
+    margin: 20px;
+}
+
+.mainContent {
+    background-color: rgb(184, 184, 184);
+    height: 55vh;
+    width: 55.39%;
+    margin: 20px 0px;
+}
+
+footer {
+    background-color: rgb(184, 184, 184);
+    padding: 20px;
+    text-align: center;
+    margin: 0px 20px;
+
+}
+
