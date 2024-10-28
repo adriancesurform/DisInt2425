@@ -28,7 +28,7 @@ body {
     color: white;
 }
 
-#texto {
+.texto {
     padding-left: 10px;
     font-style: italic;
 }
@@ -37,7 +37,7 @@ body {
     font-size: 38px;
 }
 
-#texto-especial2 {
+.texto-especial2 {
     font-size: 38px;
     color: #c4a573;
 }
