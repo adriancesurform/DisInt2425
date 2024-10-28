@@ -4,7 +4,17 @@ body {
 
 table {
     width: 40%;
-    margin: 5% auto;
+    margin: auto;
+}
+
+#table-title {
+    background-color: #fbc4cc;
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
 }
 
 th, td {
@@ -13,8 +23,16 @@ th, td {
 
 td {
     height: 70px;
-    width: 10%;
+    width: 8%;
+    transition: transform 0.06s ease-in-out;
 }
+
+td:hover {
+    transform: scale(1.2) rotate(3deg); 
+    background-color: #ffcccb;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 
 th {
     background-color: #fbc4cc;
@@ -22,6 +40,8 @@ th {
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     height: 60px;
+    padding: 20px;
+    width: auto;
 }
 
 #semana {
@@ -36,13 +56,35 @@ th {
 }
 
 
-
 .diaDiferente {
     background-color: white !important;
     border: none !important;
     box-shadow: 0px 0px 0px 0px white !important;
 }
 
+.diaDiferente:hover {
+    box-shadow: 0.3px 0.3px 2px 0px black !important;
+    border: 1px solid black !important;
+}
+
 #diaOtroMes {
     color: gray;
+}
+
+#selected {
+    background: radial-gradient(circle, #8bf88e 0%, #ffffff 50%) !important;
+    animation: shake 0.3s ease !important;
+}
+
+#selected:hover {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+@keyframes shake {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.05); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
