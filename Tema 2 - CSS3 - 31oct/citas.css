@@ -18,14 +18,14 @@ h1 {
     width: 40%;
 }
 
-#text {
+.text {
     margin: 5px;
     padding: 20px;
     background-color: rgb(255,229,233);
     color: rgb(131,131,131);
 }
 
-#info {
+.info {
     text-align: center;
     color: rgb(255, 238, 241);
     margin: 5px;
@@ -39,14 +39,14 @@ h1 {
     width: 40%;
 }
 
-#text2 {
+.text2 {
     margin: 5px;
     padding: 20px;
     background-color: rgb(161,237,219);
     color: gray;
 }
 
-#info2 {
+.info2 {
     text-align: left;
     color: rgb(147,234,213);
     margin: 5px;
@@ -60,14 +60,14 @@ h1 {
     width: 40%;
 }
 
-#text3 {
+.text3 {
     margin: 5px;
     padding: 20px;
     background-color: rgb(193,217,242);
     color: gray;
 }
 
-#info3 {
+.info3 {
     text-align: right;
     color: rgb(165,200,235);
     margin: 5px;
