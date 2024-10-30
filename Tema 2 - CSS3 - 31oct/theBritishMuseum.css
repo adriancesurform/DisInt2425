@@ -61,7 +61,7 @@ body {
     margin-bottom: 3%;
 }
 
-.container-mid #texto {
+.container-mid .texto {
     margin-left: 5%;
 }
 
@@ -74,11 +74,11 @@ body {
     margin-left: 1%;
 }
 
-#link-btn {
+.link-btn {
     padding-bottom: 2%;
 }
 
-#link {
+.link {
     text-decoration: none;
     color: #E65100;
     margin-left: 4%;
