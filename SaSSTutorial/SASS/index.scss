@@ -1,0 +1,18 @@
+$myFont: Helvetica, sans-serif;
+$myColor: darkblue;
+$myBgColor: lightblue;
+$myFontSize: 18px;
+$myWidth: 680px;
+$myBorder: 1px red double;
+
+body {
+    background-color: $myBgColor;
+    font-family: $myFont;
+    font-size: $myFontSize;
+    color: $myColor;
+}
+
+#container {
+    width: $myWidth;
+    border: $myBorder;
+}
