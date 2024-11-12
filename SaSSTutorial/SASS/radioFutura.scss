@@ -1,0 +1,87 @@
+$font-family: calibri;
+$bg-color: #d3d3d3;
+$white: white;
+$black: black;
+$gray: rgb(209, 209, 209);
+$font-size-h1: 25px;
+$font-size-special: 32px;
+$border-width-thick: 8px;
+$border-width-thin: 5px;
+$border-top-bottom-thick: 3px;
+$section-padding-left: 30px;
+$section-height: 700px;
+$section2-width: 85%;
+$margin: 10px;
+$margin-auto: 20px;
+$p-margin: 4px;
+
+
+* {
+  font-family: $font-family;
+}
+
+body {
+  background-color: $bg-color;
+  margin: 0;
+}
+
+
+.linea-divisoria {
+  border: 2px solid $white;
+  width: 98%;
+  margin-top: -15px;
+}
+
+
+.section {
+  border: $border-width-thick solid $white;
+  border-right: $border-width-thick solid $black;
+  border-bottom: $border-width-thick solid $black;
+  margin: $margin;
+  padding-left: $section-padding-left;
+  height: $section-height;
+}
+
+
+.section2 {
+  background-color: $white;
+  border-right: $border-width-thin solid $black;
+  border-bottom: $border-width-thin solid $black;
+  margin: $margin-auto;
+  width: $section2-width;
+}
+
+
+h1 {
+  text-transform: uppercase;
+  font-size: $font-size-h1;
+  letter-spacing: 1px;
+}
+
+
+.text-special {
+  font-size: $font-size-special;
+}
+
+.text-special2 {
+  border-top: $border-top-bottom-thick solid $black;
+  border-bottom: $border-top-bottom-thick solid $black;
+  font-weight: bold;
+}
+
+.text-special3 {
+  background-color: $gray;
+  color: $white;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.text-color {
+  color: $white;
+}
+
+
+p {
+  margin: $p-margin;
+  letter-spacing: -0.3px;
+}
