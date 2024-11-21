@@ -1,66 +1,44 @@
-    document.addEventListener("DOMContentLoaded", function() {
-        const changeBgDiv = document.querySelector('.changebg-img');
-        const changeBg = document.querySelector('.changebg');
-        const navbarTitle = document.getElementById('navbar-title');
-        const navbarSubtitle = document.getElementById('navbar-subtitle');
-        const navbarMenuImg = document.querySelector('.navbar-ellipse-img');
-        const navbarEllipse = document.querySelector('.navbar-ellipse');
-        const navbarChangeBg = document.querySelector('.navbar-changebg');
-        let valor = true;
+document.addEventListener("DOMContentLoaded", function () {
+    const changeBgDiv = document.querySelector('.changebg-img');
+    const changebgApp = document.querySelector('.navbar-ellipse-img');
+    const body = document.body;
+    let isNight = false; // Controla si está en modo noche
 
-        document.body.style.transition = 'background-color 0.5s ease';
-        changeBg.style.transition = '0.3s ease'
+    // Añade el evento al contenedor de la imagen
+    changeBgDiv.addEventListener('click', function () {
+        if (isNight) {
+            // Cambiar a modo día
+            document.documentElement.style.setProperty('--bg-principal', '');
+            document.documentElement.style.setProperty('--text-color-principal', '');
+            document.documentElement.style.setProperty('--navbar-color', '');
+            document.documentElement.style.setProperty('--button-bg', '');
+            document.documentElement.style.setProperty('--button-border', '');
+            document.documentElement.style.setProperty('--ellipse-shadow', '');
+            document.documentElement.style.setProperty('--ellipse-shadow-light', '');
+            document.documentElement.style.setProperty('--changebg-margin', '');
+            
+            // Cambiar icono a sol
+            changeBgDiv.style.backgroundImage = "url('icons/sun.png')";
+            changebgApp.style.backgroundImage = "url('icons/app.png')";
 
-        changeBgDiv.addEventListener('click', function() {
-            if (valor) {
-                document.body.style.backgroundColor = '#454545';
+        } else {
+            // Cambiar a modo noche
+            document.documentElement.style.setProperty('--bg-principal', 'var(--bg-principal-night)');
+            document.documentElement.style.setProperty('--text-color-principal', 'var(--text-color-principal-night)');
+            document.documentElement.style.setProperty('--navbar-color', 'var(--navbar-color-night)');
+            document.documentElement.style.setProperty('--button-bg', 'var(--button-bg-night)');
+            document.documentElement.style.setProperty('--button-border', 'var(--button-border-night)');
+            document.documentElement.style.setProperty('--ellipse-shadow', 'var(--ellipse-shadow-night)');
+            document.documentElement.style.setProperty('--ellipse-shadow-light', 'var(--ellipse-shadow-light-night)');
+            document.documentElement.style.setProperty('--changebg-margin', 'var(--changebg-margin-night)');
+            changebgApp.style.backgroundImage = "url('icons/appwhite.png')";
 
-                changeBgDiv.style.background = "url('icons/moon.png') no-repeat center center";
-                changeBgDiv.style.backgroundSize = '';
 
-                changeBg.style.marginLeft = '35px';
-                changeBg.style.backgroundColor = '#454545';
+            // Cambiar icono a luna
+            changeBgDiv.style.backgroundImage = "url('icons/moon.png')";
+        }
 
-                navbarTitle.style.color = 'white';
-
-                navbarSubtitle.style.color = 'white';
-
-                navbarMenuImg.style.background = "url('icons/appwhite.png') no-repeat center center";
-                navbarMenuImg.style.backgroundSize = '';
-
-                navbarEllipse.style.backgroundColor = "#454545";
-                navbarEllipse.style.border = "2px solid #696969";
-
-                navbarChangeBg.style.backgroundColor = "#454545";
-                navbarChangeBg.style.border = "2px solid #696969";
-
-                valor = !valor;            
-            }
-            else {
-                document.body.style.backgroundColor = '';
-
-                changeBg.style.marginLeft = '';
-                changeBg.style.backgroundColor = '';
-
-                changeBgDiv.style.background = "";
-                changeBgDiv.style.backgroundSize = '';
-                
-                navbarTitle.style.color = '';
-
-                navbarSubtitle.style.color = '';
-
-                navbarMenuImg.style.background = "";
-                navbarMenuImg.style.background = "";
-
-                navbarEllipse.style.backgroundColor = "";
-                navbarEllipse.style.border = "";
-
-                navbarChangeBg.style.backgroundColor = "";
-                navbarChangeBg.style.border = "";
-
-                valor = !valor;      
-                
-            }
-        });
+        // Alternar el estado
+        isNight = !isNight;
     });
-    
+});
