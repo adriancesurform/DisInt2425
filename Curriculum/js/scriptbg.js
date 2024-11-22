@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
             document.documentElement.style.setProperty('--ellipse-shadow', '');
             document.documentElement.style.setProperty('--ellipse-shadow-light', '');
             document.documentElement.style.setProperty('--changebg-margin', '');
-            
+            document.documentElement.style.setProperty('--article1-bg-ligth', '');
+
             // Cambiar icono a sol
             changeBgDiv.style.backgroundImage = "url('icons/sun.png')";
             changebgApp.style.backgroundImage = "url('icons/app.png')";
@@ -31,11 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
             document.documentElement.style.setProperty('--ellipse-shadow', 'var(--ellipse-shadow-night)');
             document.documentElement.style.setProperty('--ellipse-shadow-light', 'var(--ellipse-shadow-light-night)');
             document.documentElement.style.setProperty('--changebg-margin', 'var(--changebg-margin-night)');
-            changebgApp.style.backgroundImage = "url('icons/appwhite.png')";
+            document.documentElement.style.setProperty('--article1-bg-ligth', 'var(--article1-bg-night)');
 
-
+            
             // Cambiar icono a luna
             changeBgDiv.style.backgroundImage = "url('icons/moon.png')";
+            changebgApp.style.backgroundImage = "url('icons/appwhite.png')";
         }
 
         // Alternar el estado
