@@ -10,9 +10,12 @@
 </head>
 
 <body>
-    <section class="navbar">
+    <div class="navbar">
         <div id="navbar-first">
-            <p id="navbar-title">Adrian Ortega</p>
+            <div id="navbar-title-sect">
+                <p id="navbar-title">Adrian Ortega</p>
+                <p id="navbar-subtitle">Web Developer</p>
+            </div>
             <div id="navbar-secondary">
                 <div class="navbar-ellipse">
                     <div class="navbar-ellipse-img"></div>
@@ -24,20 +27,20 @@
                 </div>
             </div>
         </div>
-        <p id="navbar-subtitle">Web Developer</p>
-    </section>
-    <section class="section-image">
+    </div>
+
+    <div class="section-image">
         <div class="container-first-imgs">
             <div id="first-imgs"></div>
         </div>
-    </section>
+    </div>
 
     <article class="article">
         <div class="article-title">
             <h1>Proyects & Deployments</h1>
-            <p>These are some of my projects and developments.
+            <p>These are some of my projects and developments.</p>
             <p>It includes personal work and projects created for businesses and real clients.</p>
-            </p>
+
         </div>
 
         <div class="article-content">
@@ -45,19 +48,23 @@
                 <img src="imgs/article1img.png" alt="">
             </div>
             <div class="article-content-info">
-                <h1 id="navbar-title" style="font-size: 40px;">The Marketing Keg</h1>
-                <p id="navbar-subtitle" style="font-size: 18px; margin-top: 5%; margin-bottom: 3%;">Development of a
-                    portfolio-style website
-                    showcasing the company's work and projects, including sections for client testimonials, services
+                <h1 class="article-info-title">The Marketing Keg</h1>
+                <p class="article-info-subtitle" style="margin-top: 2%; margin-bottom: 3%;">Development of a
+                    portfolio-style
+                    website showcasing the company's work and projects, including sections for client testimonials,
+                    services
                     offered, and success stories.
-                <p id="navbar-subtitle" style="font-size: 18px;">The site highlights their innovative and
+                </p>
+                <p class="article-info-subtitle">The site highlights their innovative and
                     professional approach to digital marketing, allowing visitors to explore how they can enhance their
                     online presence through personalized solutions.
-                <p></p>
+                </p>
 
-                <button class="btn-article">VIEW PROYECT
-                    <img src="./icons/left-chevron.png" alt="">
+                <button class="btn-article" onclick="window.open('https://themarketingkeg.com/', '_blank')" style="margin-top: 5%;">
+                    OPEN PROJECT
+                    <img src="./icons/left-chevron.png" alt="Left Chevron">
                 </button>
+
                 <div class="article-box">
                     <img src="icons/cssicon.png" alt="">
                     <img src="icons/htmlicon.png" alt="">
@@ -68,24 +75,26 @@
 
         <div class="article-content2">
             <div class="article-content-info" style="display: flex; flex-direction: column; align-items: flex-end;">
-                <h1 id="navbar-title" style="font-size: 40px; text-align: right;">Rocio de Oro</h1>
-                <p id="navbar-subtitle" style="font-size: 18px; margin-top: 5%; margin-bottom: 3%; text-align: right;">A
+                <h1 class="article-info-title">Rocio de Oro</h1>
+                <p class="article-info-subtitle"
+                    style="font-size: 18px; margin-top: 5%; margin-bottom: 3%; text-align: right;">A
                     platform showcasing the
                     menu, the restaurant's story, the team, and available dining options. The website includes an
                     integrated
                     reservation system, allowing customers to easily make reservations and the staff to manage them
                     efficiently.
-                <p id="navbar-subtitle" style="font-size: 18px; text-align: right;">It also features intuitive
+                <p class="article-info-subtitle" style="font-size: 18px; text-align: right;">It also features intuitive
                     navigation, direct access
                     to location maps, and an optimized mobile experience, providing users with a convenient way to plan
                     their visit and explore the restaurant's services.
                 <p></p>
 
-                <button class="btn-article">
-                    <img src="./icons/left-chevron.png" style="transform: rotate(180deg);" alt="">
-                    VIEW PROYECT
+                <button class="btn-article" onclick="window.open('https://rociodeoro.infinityfreeapp.com', '_blank')">
+                    <img src="./icons/left-chevron.png" style="transform: rotate(180deg);" alt="Left Chevron">
+                    OPEN PROJECT
                 </button>
-                <div class="article-box" style="width: 200px;">
+
+                <div class="article-box2">
                     <img src="icons/cssicon.png" alt="">
                     <img src="icons/htmlicon.png" alt="">
                     <img src="icons/jsicon.png" alt="">
@@ -103,11 +112,9 @@
     <section class="aboutme">
         <div class="article-title">
             <h1>About Me</h1>
-            <p>Passionate developer and creative thinker, always striving to innovate and build new solutions.
+            <p>Passionate developer and creative thinker, always striving to innovate and build new solutions.</p>
             <p>Delving into the world of artificial intelligence and its potential to transform digital projects. </p>
-            </p>
         </div>
-
 
         <div class="aboutme-container">
             <div class="aboutme-container-info">
@@ -115,11 +122,10 @@
                 <div class="container-info-text">
                     <p style="font-size: 20px;">These are my studies, my journey that has made me
                         who I am today.
-                    </p><br /><br />
+                    </p><br><br>
 
                     <p style="font-weight: 300;">Website Application Development</p>
-                    <p>CFGS Superior Degree | 2022-Actual</p>
-                    <p>Cesur</p><br>
+                    <p>Cesur Formation | 2022-Actual</p><br>
 
                     <p style="font-weight: 300;">Bachelor Degree</p>
                     <p>Ies Sant Marçal | 2020-2022</p><br>
@@ -129,8 +135,9 @@
                 </div>
             </div>
             <div class="aboutme-container-lang">
-                <p style="margin-bottom: 3%; font-size: 18px; text-align: center;" id="navbar-subtitle">These are the programming knowledges that I specialize in:</p>
-                <div>
+                <p class="article-info-subtitle" style="text-align: center; margin:2% 0; margin-top: -1%;">These are the
+                    programming knowledges that I specialize in:</p>
+                <div class="article-box3">
                     <img src="icons/jsicon.png" alt="">
                     <img src="icons/cssicon.png" alt="">
                     <img src="icons/htmlicon.png" alt="">
@@ -153,11 +160,11 @@
         </div>
         <div class="contact-links">
             <div class="contact-links2">
-                <img src="icons/linkedin.png" alt="">
-                <img src="icons/instagram.png" alt="">
-                <img src="icons/tiktok.png" alt="">
-                <img src="icons/twitch.png" alt="">
-                <img src="icons/youtube.png" alt="">
+                <img src="icons/linkedin.png" onclick="window.open('https://www.linkedin.com/in/adrian-ortega-barranco-0a6213273/', '_blank')">
+                <img src="icons/instagram.png" onclick="window.open('https://www.instagram.com/ortegadriian/', '_blank')">
+                <img src="icons/tiktok.png" onclick="window.open('https://www.tiktok.com/es/', '_blank')"">
+                <img src="icons/twitch.png" onclick="window.open('https://www.twitch.tv/?lang=es-ES', '_blank')">
+                <img src="icons/youtube.png" onclick="window.open('https://www.youtube.com/', '_blank')"">
             </div>
         </div>
     </section>
