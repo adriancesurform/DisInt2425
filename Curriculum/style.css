@@ -352,7 +352,7 @@ body {
 @media (max-width: 768px) {
     .article-title h1 {
         font-size: 36px !important;
-        width: 60%;
+                width: 60%;
         margin: 0 auto;
     }
 
