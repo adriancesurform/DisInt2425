@@ -302,7 +302,7 @@ body {
 
 .btn-article img {
     width: 15px;
-    transform: rotateX(180deg);
+    transform: rotate(180deg);
 }
 
 .btn-article:hover {
@@ -352,7 +352,7 @@ body {
 @media (max-width: 768px) {
     .article-title h1 {
         font-size: 36px !important;
-                width: 60%;
+        width: 60%;
         margin: 0 auto;
     }
 
@@ -553,12 +553,10 @@ body {
 
 .aboutme-container-lang:hover img {
     transform: scale(0.9);
-    /* Todas las imágenes se hacen más pequeñas al hacer hover en el contenedor */
 }
 
 .aboutme-container-lang img:hover {
     transform: scale(1.1);
-    /* La imagen que está siendo hover se agranda */
 }
 
 @media (max-width: 768px) {
@@ -575,6 +573,7 @@ body {
         animation: jumpCoin2 4s ease-in-out !important;
     }
 
+    /* Animacion de salto */
     @keyframes jumpCoin2 {
         0% {
             transform: rotateY(0deg) translateY(0);
@@ -612,7 +611,7 @@ body {
     .aboutme-container-lang {
         margin-top: 5%;
     }
-    
+
     .aboutme-container-lang img {
         width: 25%;
         margin: 0 1%;
