@@ -3,9 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>My Web Design Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .project-description {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        
+        .preview-box {
+            width: 100%;
+            height: 180px;
+            border: 1px solid #eaeaea;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .preview-box iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .preview-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #3498db;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+        
+        .project-link:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #7f8c8d;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .projects-container {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Carpeta de Adrián Ortega</h1>
+        <p class="subtitle">¡Aquí te encontrarás una colección de todos los proyectos de Diseño de 2024-2025!</p>
+    </header>
+    
+    <div class="projects-container">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Ejercicio 1</h2>
+                <p class="project-description">Implementación de estilos con CSS.</p>
+                <div class="preview-box">
+                    <iframe src="/Ejercicios de repaso/ejercicio1.html"></iframe>
+                </div>
+                <a href="/Ejercicios de repaso/ejercicio1.html" class="project-link">View Project</a>
+            </div>
+        </div>
+        
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Calendarios</h2>
+                <p class="project-description">Calendarios con estilos y animaciones CSS.</p>
+                <div class="preview-box">
+                    <iframe src="/Tema 2 - CSS3 - 31oct/calendario.html"></iframe>
+                </div>
+                <a href="/Tema 2 - CSS3 - 31oct/calendario.html" class="project-link">View Project</a>
+            </div>
+        </div>
+        
+        <!-- Project Card 3 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Chistes Cortos</h2>
+                <p class="project-description">Entradas de chistes con estilo CSS.</p>
+                <div class="preview-box">
+                    <iframe src="/Tema 2 - CSS3 - 31oct/chistesCortos.html"></iframe>
+                </div>
+                <a href="/Tema 2 - CSS3 - 31oct/chistesCortos.html" class="project-link">View Project</a>
+            </div>
+        </div>
+        
+        <!-- Project Card 4 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Citas</h2>
+                <p class="project-description">Citas y entradas con estilos CSS.</p>
+                <div class="preview-box">
+                    <iframe src="/Tema 2 - CSS3 - 31oct/citas.html"></iframe>
+                </div>
+                <a href="/Tema 2 - CSS3 - 31oct/citas.html" class="project-link">View Project</a>
+            </div>
+        </div>
+        
+        <!-- Project Card 5 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Óscar Wilde</h2>
+                <p class="project-description">Entradas y tarjetas aplicando estilos CSS.</p>
+                <div class="preview-box">
+                    <iframe src="/Tema 2 - CSS3 - 31oct/oscarWilde.html"></iframe>
+                </div>
+                <a href="/Tema 2 - CSS3 - 31oct/oscarWilde.html" class="project-link">View Project</a>
+            </div>
+        </div>
+        
+        <!-- Project Card 6 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Radio Futura</h2>
+                <p class="project-description">Aplicar estilos a textos y a targetas con CSS.</p>
+                <div class="preview-box">
+                    <iframe src="/Tema 2 - CSS3 - 31oct/radioFutura.html"></iframe>
+                </div>
+                <a href="/Tema 2 - CSS3 - 31oct/radioFutura.html" class="project-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project Card 7 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">The British Museum</h2>
+                <p class="project-description">Aplicando estilos a cajas y tarjetas con CSS.</p>
+                <div class="preview-box">
+                    <iframe src="/Tema 2 - CSS3 - 31oct/theBritishMuseum.html"></iframe>
+                </div>
+                <a href="/Tema 2 - CSS3 - 31oct/theBritishMuseum.html" class="project-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project Card 8 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">SaSS Tutorial</h2>
+                <p class="project-description">Primer uso de SaSS aplicando sus estilos.</p>
+                <div class="preview-box">
+                    <iframe src="/SaSSTutorial/HTML/index.html"></iframe>
+                </div>
+                <a href="/SaSSTutorial/HTML/index.html" class="project-link">View Project</a>
+            </div>
+        </div>
+        <!-- Project Card 9 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Variable Scope SaSS</h2>
+                <p class="project-description">Primeros usos de SaSS</p>
+                <div class="preview-box">
+                    <iframe src="/SaSSTutorial/HTML/SaSSVariableScope.html"></iframe>
+                </div>
+                <a href="/SaSSTutorial/HTML/SaSSVariableScope.html" class="project-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project Card 10 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Radio Futura SaSS</h2>
+                <p class="project-description">Radio Futura implementando SaSS.</p>
+                <div class="preview-box">
+                    <iframe src="/SaSSTutorial/HTML/radioFuturaSCSS.html"></iframe>
+                </div>
+                <a href="/SaSSTutorial/HTML/radioFuturaSCSS.html" class="project-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project Card 11 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Boostrap First Use</h2>
+                <p class="project-description">Primer uso de Boostrap y aplicando estilos.</p>
+                <div class="preview-box">
+                    <iframe src="/Boostrap/ejemplos.html"></iframe>
+                </div>
+                <a href="/Boostrap/ejemplos.html" class="project-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project Card 12 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Layout with HTML</h2>
+                <p class="project-description">Plantilla de práctica.</p>
+                <div class="preview-box">
+                    <iframe src="/Layout/layout.html"></iframe>
+                </div>
+                <a href="/Layout/layout.html" class="project-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project Card 13 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Curriculum Vitae - CV</h2>
+                <p class="project-description">Entrega de CV personal.</p>
+                <div class="preview-box">
+                    <iframe src="/Curriculum/index.html"></iframe>
+                </div>
+                <a href="/Curriculum/index.html" class="project-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project Card 14 -->
+        <div class="project-card">
+            <div class="card-content">
+                <h2 class="project-title">Curriculum Vitae - CV</h2>
+                <p class="project-description">Entrega de CV personal.</p>
+                <div class="preview-box">
+                    <iframe src="/Tailwind/HTML/index.html"></iframe>
+                </div>
+                <a href="/Tailwind/HTML/index.html" class="project-link">View Project</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 My Web Design Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>

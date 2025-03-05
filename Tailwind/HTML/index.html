@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBTours - Tour a Nueva York</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../IMGS/statue-of-liberty.png">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+    body {
+      font-family: 'Viaoda Libre', cursive;
+    }
+
+    .text-shadow {
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    }
+
+    .bg-gradient-overlay {
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)
+      );
+    }
+
+    .modal {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+      display: none;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body class="bg-cover bg-center bg-no-repeat bg-fixed text-white" style="background-image: url('../IMGS/manhattan.webp');">
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white bg-opacity-80 text-black shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+      <div class="flex items-center space-x-3">
+        <img src="../IMGS/statue-of-liberty.png" alt="Statue of Liberty" class="w-12 h-12">
+        <span class="text-lg font-semibold">OBTours - Nueva York</span>
+      </div>
+      <nav class="md:flex space-x-6 font-medium">
+        <a href="#" class="hover:text-blue-500">Empieza por aquí</a>
+        <a href="#" class="hover:text-blue-500">Planifica</a>
+        <a href="#" class="hover:text-blue-500">¿Cuándo viajas?</a>
+        <a href="#" class="hover:text-blue-500">Qué hacer</a>
+        <a href="#" class="hover:text-blue-500">Hoteles</a>
+        <a href="#" class="hover:text-blue-500">USA</a>
+        <a href="#" class="hover:text-blue-500">Descuentos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-overlay">
+    <h1 class="text-7xl md:text-5xl font-bold tracking-wide text-shadow">
+      NUEVA YORK es mucho más<br>de lo que te han contado
+    </h1>
+    <p class="text-lg md:text-xl mt-4 text-shadow">
+      ¡Prepara un viaje único con nuestras guías y secretos!
+    </p>
+    <button class="mt-6 px-8 py-3 bg-red-600 text-white font-semibold text-lg rounded hover:bg-red-700 transition">
+      RESERVAR TOUR
+    </button>
+  </section>
+
+  <!-- First Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-black mb-8">LUGARES IMPRESCINDIBLES</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="flex flex-col items-center">
+          <img src="../IMGS/manhattan-img.jpg" alt="Manhattan" class="w-full h-64 object-cover rounded-md shadow-lg cursor-pointer" onclick="openModal(this.src)">
+          <p class="text-xl font-medium text-black mt-4">MANHATTAN</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../IMGS/central-park.jpg" alt="Central park" class="w-full h-64 object-cover rounded-md shadow-lg cursor-pointer" onclick="openModal(this.src)">
+          <p class="text-xl font-medium text-black mt-4">CENTRAL PARK</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../IMGS/brooklyn-bridge.webp" alt="Brooklyn" class="w-full h-64 object-cover rounded-md shadow-lg cursor-pointer" onclick="openModal(this.src)">
+          <p class="text-xl font-medium text-black mt-4">BROOKLYN BRIDGE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal justify-center fixed top-0 left-0 w-[100%] h-[100%]" onclick="closeModal()">
+    <img id="modalImage" src="" alt="Imagen en grande">
+  </div>
+
+  <!-- Footer for Cookies -->
+  <footer id="cookieFooter" class="bg-blue-900 text-white text-sm py-4 px-6 fixed bottom-0 left-0 w-full flex justify-between items-center">
+    <p>Utilizamos cookies para que tengas la mejor experiencia de usuario en nuestra web. Si continúas navegando, nos dices que estás de acuerdo.</p>
+    <button onclick="hideFooter()" class="bg-red-500 px-4 py-2 rounded text-white hover:bg-red-600">OK</button>
+  </footer>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto flex flex-col items-center">
+      <img src="../IMGS/statue-of-liberty.png" alt="Statue of Liberty" class="w-16 h-16 mb-4">
+      <p class="text-sm">&copy; 2025 OBTours. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function hideFooter() {
+      const footer = document.getElementById("cookieFooter");
+      footer.style.display = "none";
+    }
+
+    function openModal(src) {
+      const modal = document.getElementById("imageModal");
+      const modalImage = document.getElementById("modalImage");
+      modalImage.src = src;
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("imageModal");
+      modal.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
